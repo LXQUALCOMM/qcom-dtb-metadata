@@ -507,7 +507,7 @@
 		};
 		conf-65 {
 			compatible = "qcom,glymur-crd-staging";
-			fdt = "fdt-glymur-crd.dtb", "fdt- glymur-staging.dtbo";
+			fdt = "fdt-glymur-crd.dtb", "fdt-glymur-staging.dtbo";
 		};
 	};
 };
