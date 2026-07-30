@@ -242,6 +242,10 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/qcs6490-rb3gen2-vision-mezzanine-camx.dtbo");
 			type = "flat_dt";
 		};
+		fdt-glymur-staging.dtbo {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/glymur-staging.dtbo");
+			type = "flat_dt";
+		};
 	};
 
 	configurations {
@@ -500,6 +504,10 @@
 		conf-64 {
 			compatible = "qcom,qcs6490-iot-subtype2-camx-el2kvm";
 			fdt = "fdt-qcs6490-rb3gen2-vision-mezzanine.dtb", "fdt-qcs6490-rb3gen2-vision-mezzanine-camx.dtbo", "fdt-kodiak-el2.dtbo";
+		};
+		conf-65 {
+			compatible = "qcom,glymur-crd-staging";
+			fdt = "fdt-glymur-crd.dtb", "fdt-glymur-staging.dtbo";
 		};
 	};
 };
